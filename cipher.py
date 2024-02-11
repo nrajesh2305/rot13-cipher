@@ -27,7 +27,14 @@ def encrypt_message(message):
     return encrypted_message
 
 def decrypt_message(message):
-    pass
-
-printIntro()
-print("The translated message is:\n" + encrypt_message("Meet me by the rose bushes tonight."))
+    decrypted_message = ""
+    for letter in message:
+        letter = letter.upper()
+        if(letter in alphabet):
+            if(alphabet.index(letter) - 13 <= len(alphabet)):
+                decrypted_message += alphabet[alphabet.index(letter) - 13]
+            else:
+                decrypted_message += alphabet[alphabet.index(letter)]
+        else:
+            decrypted_message += letter
+    return decrypted_message
