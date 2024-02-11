@@ -8,7 +8,7 @@ To use the ROT13 Cipher, simply input your message into the prompt, and it will 
 # Information about Cipher Use Cases + Extra Information
 
 The ROT13 Cipher is used to conceal non-sensitive information, such as spoilers, or trivia answers, so it's not read unintentionally. More information regarding the ROT13 Cipher can be found on its Wikipedia page.
-[text](https://en.wikipedia.org/wiki/ROT13)
+[Wikipedia Link to ROT13](https://en.wikipedia.org/wiki/ROT13)
 
 # Source:
 
