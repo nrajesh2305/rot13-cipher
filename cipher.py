@@ -13,7 +13,7 @@ l = 11
 def printIntro():
     print("\nROT13 Cipher, by Nithin Rajesh " + website_url + "\n\n")
 
-def encrypt_message(message):
+def encrypt_or_decrypt_message(message):
     encrypted_message = ""
     for letter in message:
         letter = letter.upper()
@@ -25,16 +25,3 @@ def encrypt_message(message):
         else:
             encrypted_message += letter
     return encrypted_message
-
-def decrypt_message(message):
-    decrypted_message = ""
-    for letter in message:
-        letter = letter.upper()
-        if(letter in alphabet):
-            if(alphabet.index(letter) - 13 <= len(alphabet)):
-                decrypted_message += alphabet[alphabet.index(letter) - 13]
-            else:
-                decrypted_message += alphabet[alphabet.index(letter)]
-        else:
-            decrypted_message += letter
-    return decrypted_message
